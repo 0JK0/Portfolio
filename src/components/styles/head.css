@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Mx437';
+    src: url('/fonts/Mx437_Acer710_Mono.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    font-family: 'Mx437', monospace, system-ui;
+    color: white;
+}
+
+.mainHeader {
+    margin: 2em auto;
+
+    max-width: 1200px;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 2rem;
+    background-color: black;
+    padding: 0 2rem;
+}
+
+
+.presentationContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 600px;
+
+}
+
+.myName {
+    font-size: 2.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.meDesc {
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.5;
+    opacity: 0.8;
+
+    margin-bottom: 0.5em;
+
+}
+
+.moiPicture {
+    width: 10em;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttonsContainer{
+
+    display: flex; 
+    flex-direction: row;
+
+}
+
+
+@media (max-width: 1024px) {
+    .mainHeader {
+    width: 95%;
+    gap: 1.2rem;
+
+}
+}
+
+@media (max-width: 900px) {
+    .mainHeader {
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentationContainer {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.meDesc {
+    text-align: center;
+}
+}
+

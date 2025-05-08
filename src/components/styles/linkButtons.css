@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Mx437';
+    src: url('/fonts/Mx437_Acer710_Mono.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.moiButton{
+
+    display: flex; 
+    flex-direction: row;
+    
+    height: 40px;
+    width: 120px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: black;
+    font-family: Mx437,monospace;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+
+
+    align-items: center;
+    justify-content: center;
+    justify-content: center; 
+
+
+    transform: scale(0.9);
+    transition: transform 0.1s ease-in-out;
+
+
+}
+
+.moiButton-logo{
+
+    width: 35px;
+    height: 35px;
+    margin-left: 5px; 
+
+    border: none;
+
+}
+
+.moiButton:hover{
+
+    background-color: rgb(221, 221, 221);
+    transform: scale(1);
+
+}
+
+.moiButton:active{
+
+    background-color: rgb(190, 189, 189);
+    transform: scale(1.07);
+}
+
+@media (max-width: 900px) {
+
+    .moiButton{
+        transform: scale(0.9);
+        transition: transform 0.1s ease-in-out;
+    }
+}
+
+
+
