@@ -5,12 +5,8 @@ import IdleStatus from '../assets/StatusImg/idle.png'
 import More from '../assets/Other/more.png';
 import Friend from '../assets/Other/friend.png';
 import profileImage from '../assets/Other/profileImage.jpg'
-import tempMoi from '../assets/Other/tempMoi.webp';
-
-
 
 // DiscordProfileCard-main
-
 
 export function DiscordProfileCard(){
 
@@ -27,12 +23,10 @@ export function DiscordProfileCard(){
 
             <aside className="DiscordProfileCard-pfpContainer"> 
 
-
             <img 
                 src= {profileImage} 
                 alt="pfp" 
-                className="DiscordProfileCard-pfpImage" 
-            />
+                className="DiscordProfileCard-pfpImage" />
 
             <img 
 
@@ -46,25 +40,48 @@ export function DiscordProfileCard(){
 
             <div className='DiscordProfileCard-userZone'>
 
-                <strong className='DiscordProfileCard-name'>Jay</strong>
+                <span className='DiscordProfileCard-name'>Jay</span>
 
                 <div className='DiscordProfileCard-info'>
 
                     <span className='DiscordProfileCard-userName'>@jk1ng_</span>
                     <span className='DiscordProfileCard-pronouns'> • He/Him</span>
-                    {/* <span className='DiscordProfileCard-badges'> X - X </span> */}
+                    
 
                 </div>
 
 
             </div>
 
-            <div className='DiscordProfileCard-mutuals'> 4 Mutual Friends  • 20 Mutual servers  </div>
+            <div className='DiscordProfileCard-mutuals'> 18 años  • Colombiano 🇨🇴 </div>
 
             <div className='DiscordProfileCard-bio'>
+                <strong>About Me</strong>
 
-                <p className='DiscordProfileCard-bioText'> SIGMAAAAAA SIGMAAA BOYYYY</p>
+                <p className='DiscordProfileCard-bioText'>➤ Software Dev <br/>➤ Building Things I Use <br/>➤ Always Learning</p>
 
+            </div>
+
+            <div className='DiscordProfileCard-rolesContainer'>
+
+                <div className='DiscordProfileCard-rolesContainer-title'>
+                   <strong>Roles</strong> 
+
+                </div>
+
+                <div className='DiscordProfileCard-rolesContainer-grid'>
+                    
+                    <RolesTag image={'src/assets/techLogos/javascript-logo-svgrepo-com.svg'} text={'JavaScript'}/>
+                    <RolesTag image={'src/assets/techLogos/c-1.svg'} text={'C/C++'}/>
+                    <RolesTag image={'src/assets/techLogos/dart.svg'} text={'Dart'}/>
+                    <RolesTag image={'src/assets/techLogos/java-4.svg'} text={'Java'}/>
+                    <RolesTag image={'src/assets/techLogos/lua-5.svg'} text={'Lua'}/>
+                    <RolesTag image={'src/assets/techLogos/mysql-logo-pure.svg'} text={'SQL'}/>
+                    <RolesTag image={'src/assets/techLogos/python-5.svg'} text={'Python'}/>
+                    <RolesTag image={'src/assets/techLogos/debian-2.svg'} text={'Linux'}/>   
+                    
+                </div> 
+            
             </div>
 
             <div className='DiscordProfileCard-messageContainer'>
@@ -80,4 +97,29 @@ export function DiscordProfileCard(){
             
  
     );
+}
+
+interface Props {
+
+    text: string | null;
+    image: string | undefined;
+
+}
+
+
+function RolesTag({text,image}:Props){
+
+    return(
+
+        <div className='rolesTag-container'>
+            
+            <div className='rolesTag-image'>
+                <img src={image}/> 
+            </div>
+
+           <span className='rolesTag-text'>{text} </span> 
+        </div>
+
+    )
+
 }

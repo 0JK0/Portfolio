@@ -17,7 +17,7 @@ export function LandingHeader(){
             <header className="myName">Julian Monsalve</header>
             <p className="meDesc">
                 Desarrollador de software con experiencia freelance en aplicaciones móviles y desarrollo de videojuegos. 
-                Dedico mi tiempo a crear soluciones que resuelven problemas reales y aparenten productos reales. 
+                Dedico mi tiempo a crear soluciones que resuelven problemas reales y aparentan productos reales. 
                 Busco oportunidades donde pueda contribuir, crecer y desafiarme a mí mismo.
             </p>
 
