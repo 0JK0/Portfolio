@@ -14,7 +14,7 @@ export function LinkButton({text, image,href}: Props){
 
         <a href={href} className="moiButton" target="_blank" rel="noopener noreferrer">
         {text} 
-        {image && <img src={image} className="moiButton-logo" alt="button logo" />}
+        {image && <img src={image} className="moiButton-logo" alt="button logo" loading='lazy' width={50} height={50} />}
       </a>
 
         

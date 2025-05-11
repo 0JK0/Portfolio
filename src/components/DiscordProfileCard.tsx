@@ -4,7 +4,7 @@ import IdleStatus from '../assets/StatusImg/idle.png'
 
 import More from '../assets/Other/more.png';
 import Friend from '../assets/Other/friend.png';
-import profileImage from '../assets/Other/profileImage.jpg'
+import profileImage from '../assets/Other/profileImage.webp'
 
 // DiscordProfileCard-main
 
@@ -15,9 +15,9 @@ export function DiscordProfileCard(){
         <article className="DiscordProfileCard">
 
             <div className='DiscordProfileCard-background'>  
-                <img src="src/assets/Other/catgif.png" alt="Header" className='DiscordProfileCard-background-gif'  />
-                <button className='DiscordProfileCard-friendButton'> <img src={Friend} alt="F" width="18" height="18" type="button" /></button>
-                <button className='DiscordProfileCard-moreButton'> <img src={More} alt='M' width="18" height="18" type="button" /> </button>
+                <img src="src/assets/Other/catgif.png" alt="Header" className='DiscordProfileCard-background-gif' loading='lazy' />
+                <button className='DiscordProfileCard-friendButton'> <img src={Friend} alt="F" width="18" height="18"  /></button>
+                <button className='DiscordProfileCard-moreButton'> <img src={More} alt='M' width="18" height="18"  /> </button>
 
             </div>
 
@@ -26,14 +26,16 @@ export function DiscordProfileCard(){
             <img 
                 src= {profileImage} 
                 alt="pfp" 
-                className="DiscordProfileCard-pfpImage" />
+                className="DiscordProfileCard-pfpImage" 
+                loading='lazy'
+            />
 
             <img 
 
                 src={IdleStatus} 
                 alt="S" 
                 className='DiscordProfileCard-status' 
-
+                loading='lazy'
             /> 
 
             </aside>
@@ -114,7 +116,7 @@ function RolesTag({text,image}:Props){
         <div className='rolesTag-container'>
             
             <div className='rolesTag-image'>
-                <img src={image}/> 
+                <img src={image} alt='.' loading='lazy'/> 
             </div>
 
            <span className='rolesTag-text'>{text} </span> 

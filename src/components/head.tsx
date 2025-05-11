@@ -3,8 +3,8 @@ import './styles/head.css'
 import { DiscordProfileCard } from './DiscordProfileCard.tsx';
 import { LinkButton } from './linkButtons.tsx';
 
-import githubLogo from '../assets/Other/githubLogo.png'
-import linkedIn from '../assets/Other/linkedInLogo.webp';
+import githubLogo from '../assets/techLogos/github-icon-1.svg'
+import linkedIn from '../assets/techLogos/linkedin-icon-1.svg';
 import tempMoi from '../assets/Other/tempMoi.webp';
 
 export function LandingHeader(){
@@ -23,9 +23,9 @@ export function LandingHeader(){
 
             <div className='buttonsContainer'>
 
-                <LinkButton image={githubLogo} href='https://github.com/0JK0' />
-                <LinkButton text='Hoja Vida' href='/JulianMonsalve-CV.pdf'/>
-                <LinkButton image={linkedIn}  href='https://www.linkedin.com/in/julian-monsalve-69420-osorio'/>
+                <LinkButton image={githubLogo} text={""} href='https://github.com/0JK0' />
+                <LinkButton text='Hoja Vida' image={""} href='/JulianMonsalve-CV.pdf'/>
+                <LinkButton image={linkedIn}  text={""} href='https://www.linkedin.com/in/julian-monsalve-69420-osorio'/>
 
             </div>
 
