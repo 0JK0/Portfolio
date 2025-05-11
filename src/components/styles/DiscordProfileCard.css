@@ -237,18 +237,27 @@
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--button-bg) transparent;
+
 }
 
 .DiscordProfileCard strong{
 
   font-size: 1.2rem;
+  
 
 }
 
 .DiscordProfileCard-bioText {
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 0.95rem;
   line-height: 1.3625rem;
+  color: white;
+  
+}
+
+.purple-arrow {
+  color:  rgb(205, 166, 255); 
+  font-size: 0.9rem; 
 }
 
 /* Message functionality */

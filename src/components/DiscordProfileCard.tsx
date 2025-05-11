@@ -60,7 +60,14 @@ export function DiscordProfileCard(){
             <div className='DiscordProfileCard-bio'>
                 <strong>About Me</strong>
 
-                <p className='DiscordProfileCard-bioText'>➤ Software Dev <br/>➤ Building Things I Use <br/>➤ Always Learning</p>
+                <div className='DiscordProfileCard-bioText'>
+
+                    <span className="purple-arrow">➤</span> Software Dev <br/>
+                    <span className="purple-arrow">➤</span> Building Things I Use <br/>
+                    <span className="purple-arrow">➤</span> Always Learning
+
+                </div>
+
 
             </div>
 
