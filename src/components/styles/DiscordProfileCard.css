@@ -376,6 +376,13 @@
 
 }
 
+.rolesTag-container:hover{
+
+  scale: 110%;
+  background-color: var(--button-bg-hover);
+
+}
+
 
 .rolesTag-image{
 
