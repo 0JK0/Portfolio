@@ -29,9 +29,9 @@ export function Projects(){
                     tagImage2={reactLogo}
                     tagText2='ReactNative'
 
-                    description="A simple and efficient note taking app for Android. 
-                    It allows you to create and manage text, audio, and video notes, and organize them by date using an integrated calendar. 
-                    The app also supports multiple user profiles"
+                    description="Una aplicación sencilla y eficiente para tomar notas en Android. 
+                    Permite crear y gestionar notas de texto, audio y video, y organizarlas por fecha mediante un calendario integrado. 
+                    La app también admite múltiples perfiles de usuario."
                 />
 
 
