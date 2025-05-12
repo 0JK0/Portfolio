@@ -1,6 +1,12 @@
 import './styles/Projects.css'
 import { useState } from 'react';
 
+import jsLogo from '../assets/techLogos/javascript-logo-svgrepo-com.svg';
+import reactLogo from '../assets/techLogos/react-2.svg';
+
+import JayNotes_icon from '../assets/Projects/JayNotes-icon.webp'
+import JayNotes_homeScreen from '../assets/Projects/JayNotes-homeScreen.webp'
+
 export function Projects(){
 
     return(
@@ -14,13 +20,13 @@ export function Projects(){
                 <Card 
                     link='https://github.com/0JK0/JayNotes'
 
-                    image='src/assets/Projects/JayNotes-icon.webp'
-                    hoverImage='src/assets/Projects/JayNotes-homeScreen.webp' 
+                    image={JayNotes_icon}
+                    hoverImage={JayNotes_homeScreen} 
                     title='JayNotes' 
                     
-                    tagImage='src/assets/techLogos/javascript-logo-svgrepo-com.svg' 
+                    tagImage={jsLogo} 
                     tagText='JavaScript'
-                    tagImage2='src/assets/techLogos/react-2.svg'
+                    tagImage2={reactLogo}
                     tagText2='ReactNative'
 
                     description="A simple and efficient note taking app for Android. 
