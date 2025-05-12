@@ -106,14 +106,14 @@ function Card({image,hoverImage,title,tagImage,tagText,tagImage2,tagText2,descri
 }
 
 
-interface Props {
+interface tagProps {
 
     text: string | undefined;
     image: string | undefined;
 
 }
 
-function Tag({text,image}:Props){
+function Tag({text,image}:tagProps){
 
     return(
 
