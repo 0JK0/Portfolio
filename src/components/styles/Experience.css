@@ -48,7 +48,7 @@
     background-position: left;
     background-size: 4px 11px;
     background-repeat: repeat-y;
-    padding-left: 0.5rem;
+    padding-left: 1.2rem;
 
 }
 
@@ -100,4 +100,5 @@
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
+
 }

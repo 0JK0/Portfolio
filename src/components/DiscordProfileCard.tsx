@@ -75,8 +75,8 @@ export function DiscordProfileCard(){
                 <div className='DiscordProfileCard-bioText'>
 
                     <span className="purple-arrow">➤</span> Software Dev <br/>
-                    <span className="purple-arrow">➤</span> Building Things I Use <br/>
-                    <span className="purple-arrow">➤</span> Always Learning
+                    <span className="purple-arrow">➤</span> Construyendo cosas con uso <br/>
+                    <span className="purple-arrow">➤</span> Siempre aprendiendo
 
                 </div>
 
