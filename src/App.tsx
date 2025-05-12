@@ -2,7 +2,7 @@ import './App.css';
 
 import {LandingHeader} from './components/head.tsx';
 import { Timeline } from './components/Experience.tsx';
-import { Card } from './components/Projects.tsx';
+import { Projects } from './components/Projects.tsx';
 
 function App() {
   return (
@@ -16,8 +16,7 @@ function App() {
       </div>
 
       <div className='projects'>
-        <Card image='src/assets/Projects/JayNotes-icon.png' title='JayNotes' tagImage='src/assets/techLogos/javascript-logo-svgrepo-com.svg' tagText='JavaScript' />
-        <Card image='' title='' />
+        <Projects />
       </div> 
       
     </>
