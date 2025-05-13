@@ -69,7 +69,7 @@
 
 .timeLine-jobName{
 
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 
 }
 
@@ -87,8 +87,8 @@
 }
 
 .timeLine-text{
-    line-height: 15px;
-    font-size: 1.2rem;
+    line-height: 17px;
+    font-size: 1.23rem;
 
     display: flex;
     flex-direction: column;
