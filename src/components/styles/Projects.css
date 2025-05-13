@@ -20,7 +20,7 @@
 
 @media (max-width: 750px) {
 
-  .projects{
+  .projects-cards{
 
     flex-direction: column;
   }
@@ -87,8 +87,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 7px;
+
+  margin: 7px auto 7px auto;
 
 }
 

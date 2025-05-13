@@ -3,9 +3,14 @@ import { useState } from 'react';
 
 import jsLogo from '../assets/techLogos/javascript-logo-svgrepo-com.svg';
 import reactLogo from '../assets/techLogos/react-2.svg';
+import pythonLogo from '../assets/techLogos/python-5.svg';
+import sqlLogo from '../assets/techLogos/mysql-logo-pure.svg';
 
-import JayNotes_icon from '../assets/Projects/JayNotes-icon.webp'
-import JayNotes_homeScreen from '../assets/Projects/JayNotes-homeScreen.webp'
+import JayNotes_icon from '../assets/Projects/JayNotes-icon.webp';
+import JayNotes_homeScreen from '../assets/Projects/JayNotes-homeScreen.webp';
+
+import WorkoutTracker_icon from '../assets/Projects/Workout_Tracker-icon.webp';
+import WorkoutTracker_mainMenu from '../assets/Projects/Workout_Tracker-mainMenu.webp'
 
 export function Projects(){
 
@@ -32,6 +37,23 @@ export function Projects(){
                     description="Una aplicación sencilla y eficiente para tomar notas en Android. 
                     Permite crear y gestionar notas de texto, audio y video, y organizarlas por fecha mediante un calendario integrado. 
                     La app también admite múltiples perfiles de usuario."
+                />
+
+                <Card 
+                    link='https://github.com/0JK0/Workout_Tracker'
+
+                    image={WorkoutTracker_icon}
+                    hoverImage={WorkoutTracker_mainMenu} 
+                    title='Workout Tracker' 
+                    
+                    tagImage={pythonLogo} 
+                    tagText='Python'
+                    tagImage2={sqlLogo}
+                    tagText2='Sqlite'
+
+                    description="Una aplicación de Terminal(TUI), 
+                    permite a los usuarios gestionar sus rutinas de ejercicio y registrar automáticamente su historial de entrenamientos. 
+                    Incluye funciones para actualizar registros y rutinas existentes."
                 />
 
 
